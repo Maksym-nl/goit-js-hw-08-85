@@ -30,6 +30,6 @@ function onLoad(){
         return
     }
     const {email, message} = form.elements
-    email.value = storageData.email
-    message.value = storageData.message
+    email.value = storageData.email || ""
+    message.value = storageData.message || ""
 }
